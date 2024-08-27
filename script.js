@@ -47,11 +47,9 @@ function calculate() {
     const phoneUpgradePrice = Number(document.getElementById('phone-upgrade-price').value);
     // const phonePurchasePrice = Number(document.getElementById('phone-purchase-price').value);
     let phonePurchasePrice = document.getElementById('phone-purchase-price').value;
-    alert(phonePurchasePrice);
     if (!phonePurchasePrice){
         phonePurchasePrice = Number(document.getElementById('phone-purchase-price').placeholder);
     }
-    alert(phonePurchasePrice);
 
 
     const totalOfIndependent = totalWhenBuyingIndependently(phonePrice, taxPercent, months, monthlyCredit, taxCreditOfIndependent);
