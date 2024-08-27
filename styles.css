@@ -145,7 +145,7 @@ input[type=number] {
 }
 
 /* for moving the block on the right below the one on the left when the screen is below a certain width */
-@media (max-width: 1327px) {
+@media (max-width: 1330px) {
     .block {
         width: 92%;
         margin: 48px auto;
