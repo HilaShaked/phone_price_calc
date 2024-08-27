@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Bracket 2024</title>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Calculate Phone Cost</div>
+
+        <label for="tax-percent">Tax percent:</label>
+        <select id="tax-percent" class="input">
+            <option value="0.10">10%</option>
+            <option value="0.14">14%</option>
+            <option value="0.20">20%</option>
+            <option value="0.31">31%</option>
+            <option value="0.35" selected>35%</option>
+            <option value="0.47">47%</option>
+            <option value="0.50">50%</option>
+        </select>
+
+        <a href="https://taxes-refund.co.il/tax-brackets" target="_blank">
+            <button class="smaller-text">View Tax Bracket</button>
+        </a>
+
+        <br>
+        <br>
+
+        <label for="months">Number of months:</label>
+        <input id="months" class="input smaller-width" type="number" min="1" value="36">
+
+        <br>
+        <br>
+
+       <!-- <div class="separator"></div> -->
+
+
+        <div class="block left">
+            <label class="sub-title">Buying Independently</label>
+            <br>
+            <br>
+            <label>Tax credits:</label>
+            <input class="input small-width" id="tax-credits-independent" value="14" type="number" min="0">
+            <br>
+            <br>
+            <label>Phone price:</label>
+<!--            <input class="input medium-width" id="phone-price" type="text" oninput="formatNumber(this)">-->
+            <input class="input medium-width" id="phone-price" type="number" min="0" placeholder="0">
+            <br>
+            <br>
+            <label>Monthly credit to gross:</label>
+            <input class="input small-width" id="monthly-credit" type="number" min="0" value="150">
+
+            <p>Gain in total: <span  class="total" id="total-of-independent">0</span></p>
+        </div>
+        <div class="block right">
+            <label class="sub-title">Company Bought</label>
+            <br>
+            <br>
+            <label>Tax credits:</label>
+            <input class="input small-width" id="tax-credits-company" value="71.3" type="number" min="0">
+            <br>
+            <br>
+            <label>Phone upgrade price:</label>
+            <input class="input medium-width" id="phone-upgrade-price" type="number" min="0"  placeholder="0">
+            <br>
+            <br>
+            <label>Phone purchase price:</label>
+            <input class="input medium-width" id="phone-purchase-price" type="number" min="0"  placeholder="0">
+            <p>Gain in total: <span class="total" id="total-of-company-bought">0</span></p>
+        </div>
+
+        <div class="inviz">
+            <p>aslkdfjadfjk</p>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <div class="result-container">
+            <p class="needs-to-go-down">Difference (left - right): <span class="total" id="diff">0</span></p>
+            <br>
+            <button onclick="calculate()">Calculate</button>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
