@@ -94,29 +94,52 @@ button:hover {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    height: 320px;
+    /* float: inline-end; */
+    width: 330px;
+    /* background-color: #000; */
+}
+
+
+.container-for-block {
+    width: 840px;
+    /* width: 72%; */
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
 }
 
 
 .block {
-    width: 28%;
-    height: 220px;
-    margin-top: 60px;
-}
+    /* width: 28%; */
+    width: 328px;
+    height: 248px;
 
-.left {
-    float:left;
+    border-radius: 24px;
+    /* border-width: 48px; */
+    background-color: lightgray;
+    /* background-size: contain; */
     text-align: left;
-    /* padding-right: 28px; */
-    margin-left: 24%;
-
+    padding: 32px;
+    /* margin: auto 40px; */
 }
+
+/* .left {
+    float: left;
+
+    * padding-right: 28px; *
+} 
 .right {
     float: right;
-    /* border-left: 3px solid gray; */
-    text-align: left;
-    padding-left: 32px;
-    margin-right: 16%;
-}
+    * border-left: 3px solid gray; *
+    * padding-left: 32px; *
+    * margin-right: 16%; *
+    * margin-left: 20px; *
+    
+} */
 
 .smaller-width {
     width: 45px;
@@ -145,18 +168,18 @@ input[type=number] {
 }
 
 /* for moving the block on the right below the one on the left when the screen is below a certain width */
-@media (max-width: 1330px) {
+@media (max-width: 1300px) {
     .block {
-        width: 92%;
-        margin: 48px auto;
-        text-align: center;
+        margin: 48px 3%;
+        /* margin: auto; */
+        margin-right: 20%;
     }
-    .right {
-        border-left: 0px;
-        padding: 0 8%;
-        margin-right: -6%;
-    }
-    .left {
-        margin-left: 6%;
+    /* .right, .left {
+        float: none;
+    } */
+    .container-for-block {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
     }
 }

@@ -37,48 +37,49 @@
 
        <!-- <div class="separator"></div> -->
 
+        <div class="container-for-block">
+            <div class="block left">
+                <label class="sub-title">Buying Independently</label>
+                <br>
+                <br>
+                <label>Tax credits:</label>
+                <input class="input small-width" id="tax-credits-independent" value="14" type="number" min="0">
+                <br>
+                <br>
+                <label>Phone price:</label>
+                <!--<input class="input medium-width" id="phone-price" type="text" oninput="formatNumber(this)">-->
+                <input class="input medium-width" id="phone-price" type="number" min="0" placeholder="0">
+                <br>
+                <br>
+                <label>Monthly credit to gross:</label>
+                <input class="input small-width" id="monthly-credit" type="number" min="0" value="150">
 
-        <div class="block left">
-            <label class="sub-title">Buying Independently</label>
-            <br>
-            <br>
-            <label>Tax credits:</label>
-            <input class="input small-width" id="tax-credits-independent" value="14" type="number" min="0">
-            <br>
-            <br>
-            <label>Phone price:</label>
-<!--            <input class="input medium-width" id="phone-price" type="text" oninput="formatNumber(this)">-->
-            <input class="input medium-width" id="phone-price" type="number" min="0" placeholder="0">
-            <br>
-            <br>
-            <label>Monthly credit to gross:</label>
-            <input class="input small-width" id="monthly-credit" type="number" min="0" value="150">
-
-            <p>Gain in total: <span  class="total" id="total-of-independent">0</span></p>
+                <p>Gain in total: <span  class="total" id="total-of-independent">0</span></p>
+            </div>
+            <div class="block right">
+                <label class="sub-title">Company Bought</label>
+                <br>
+                <br>
+                <label>Tax credits:</label>
+                <input class="input small-width" id="tax-credits-company" value="71.3" type="number" min="0">
+                <br>
+                <br>
+                <label>Phone upgrade price:</label>
+                <input class="input medium-width" id="phone-upgrade-price" type="number" min="0"  placeholder="0">
+                <br>
+                <br>
+                <label>Phone purchase price:</label>
+                <input class="input medium-width" id="phone-purchase-price" type="number" min="0"  value="350">
+                <p>Gain in total: <span class="total" id="total-of-company-bought">0</span></p>
+            </div>
         </div>
-        <div class="block right">
-            <label class="sub-title">Company Bought</label>
-            <br>
-            <br>
-            <label>Tax credits:</label>
-            <input class="input small-width" id="tax-credits-company" value="71.3" type="number" min="0">
-            <br>
-            <br>
-            <label>Phone upgrade price:</label>
-            <input class="input medium-width" id="phone-upgrade-price" type="number" min="0"  placeholder="0">
-            <br>
-            <br>
-            <label>Phone purchase price:</label>
-            <input class="input medium-width" id="phone-purchase-price" type="number" min="0" value="350">
-            <p>Gain in total: <span class="total" id="total-of-company-bought">0</span></p>
-        </div>
 
-        <div class="inviz">
+        <!-- <div class="inviz">
             <p>aslkdfjadfjk</p>
             <br>
             <br>
             <br>
-        </div>
+        </div> -->
 
         <div class="result-container">
             <p class="needs-to-go-down">Difference (left - right): <span class="total" id="diff">0</span></p>
